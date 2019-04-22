@@ -1,0 +1,12 @@
+{{partial "header.html"}}
+
+<div class="">
+    <h2>Content List</h2>
+    <div class="">
+        {{range .Site.RegularPages}}
+        <a href="{{.Permalink}}" class="list-group-item list-group-item-action"> {{.Title}}</a>
+        <br>
+        {{end}}
+    </div>
+</div>
+{{ partial "footer.html" . }}
