@@ -3,39 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>index.html/</loc>
     <lastmod>2019-04-15T12:16:47+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/opdrachten/_01/</loc>
+    <loc>index.html/opdrachten/_01/</loc>
     <lastmod>2019-04-15T12:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/opdrachten/_02/</loc>
+    <loc>index.html/opdrachten/_02/</loc>
     <lastmod>2019-04-15T12:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/opdrachten/_03/</loc>
+    <loc>index.html/opdrachten/_03/</loc>
     <lastmod>2019-04-15T12:16:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/opdrachten/</loc>
+    <loc>index.html/opdrachten/</loc>
     <lastmod>2019-04-15T12:16:47+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>index.html/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>index.html/tags/</loc>
     <priority>0</priority>
   </url>
   

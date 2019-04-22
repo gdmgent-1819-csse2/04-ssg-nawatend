@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "index.html"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "MyNawTheme"
