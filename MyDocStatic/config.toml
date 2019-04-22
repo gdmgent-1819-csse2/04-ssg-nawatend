@@ -1,4 +1,4 @@
-baseURL = "https://gdmgent-1819-csse2.github.io/04-ssg-nawatend/"
+baseURL = ""
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "MyNawTheme"
