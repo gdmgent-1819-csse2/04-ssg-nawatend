@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {{partial "head.html"}}
+    <title>Document</title>
+</head>
+
+<body class="d-flex justify-content-center flex-column align-items-center">
+    {{partial "header.html"}}
+    <div class="w-100 d-flex justify-content-space-between">
+        {{ if (.Params.URL_P) }}
+        <a href=" {{.Params.URL_P}}" class="list-group-item list-group-item-action">
+            <span class="font-weight-bold">Previous: {{.Params.P_TITLE}}</span>
+        </a>
+        {{end}}
+
+        {{ if (.Params.URL_N) }}
+        <a href=" {{.Params.URL_N}}" class="list-group-item list-group-item-action text-right">
+            <span class="font-weight-bold">NEXT: {{.Params.N_TITLE}}</span>
+        </a>
+        {{end}}
+    </div>
+    <div class="w-100">
+        {{.Content}}
+    </div>
+
+    <div class="w-100 d-flex justify-content-space-between">
+        {{ if (.Params.URL_P) }}
+        <a href=" {{.Params.URL_P}}" class="list-group-item list-group-item-action">
+            <span class="font-weight-bold">Previous: {{.Params.P_TITLE}}</span>
+        </a>
+        {{end}}
+
+        {{ if (.Params.URL_N) }}
+        <a href=" {{.Params.URL_N}}" class="list-group-item list-group-item-action text-right">
+            <span class="font-weight-bold">NEXT: {{.Params.N_TITLE}}</span>
+        </a>
+        {{end}}
+    </div>
+</body>
+
+</html>
