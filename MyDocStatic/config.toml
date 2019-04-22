@@ -4,3 +4,4 @@ title = "My New Hugo Site"
 theme = "MyNawTheme"
 pygmentsStyle="monokai"
 pygmentsCodeFences=true
+publishDir = "../docs"
