@@ -1,4 +1,4 @@
-baseURL = "/docs"
+baseURL = "04-ssg-nawatend/docs"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "MyNawTheme"

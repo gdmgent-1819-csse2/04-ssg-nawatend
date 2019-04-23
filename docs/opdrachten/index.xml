@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opdrachtens on My New Hugo Site</title>
-    <link>/docs/opdrachten/</link>
+    <link>04-ssg-nawatend/docs/opdrachten/</link>
     <description>Recent content in Opdrachtens on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Apr 2019 12:16:47 +0200</lastBuildDate>
     
-	<atom:link href="/docs/opdrachten/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="04-ssg-nawatend/docs/opdrachten/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Opdracht 01: Basic Matrix And Vectors</title>
-      <link>/docs/opdrachten/_01/</link>
+      <link>04-ssg-nawatend/docs/opdrachten/_01/</link>
       <pubDate>Mon, 15 Apr 2019 12:16:47 +0200</pubDate>
       
-      <guid>/docs/opdrachten/_01/</guid>
+      <guid>04-ssg-nawatend/docs/opdrachten/_01/</guid>
       <description>Making Classes of Vectors and Matrixes Lets make 2D vector in JS  Open Visual Studio code, create this folder structure
 ├── assets ├── css ├── main.css ├── glsl ├── js ├── Library ├── Math ├── Vector2.js ├── Tests.js ├── Application.js ├── main.js ├── index.html  Open Vector2.js in VS Code and we are going make a class of Vector2
 export default class Vector2 { /** * Create a vector.</description>
@@ -24,20 +24,20 @@ export default class Vector2 { /** * Create a vector.</description>
     
     <item>
       <title>Opdracht 02: Real Time Clock</title>
-      <link>/docs/opdrachten/_02/</link>
+      <link>04-ssg-nawatend/docs/opdrachten/_02/</link>
       <pubDate>Mon, 15 Apr 2019 12:16:47 +0200</pubDate>
       
-      <guid>/docs/opdrachten/_02/</guid>
+      <guid>04-ssg-nawatend/docs/opdrachten/_02/</guid>
       <description>Lets create a 2D Real Time Clock  If you have finished last tasks, you would have folder structure like this
 ├── assets ├── css ├── main.css ├── glsl ├── fragment-shader.glsl ├── vertex-shader.glsl ├── js ├── Library ├── Math ├── Vector2.js ├── Vector3.js ├── Vector4.js ├── Matrix2.js ├── Matrix3.js ├── Matrix4.js ├── Canvas.js ├── Tests.js ├── Application.js ├── main.js ├── index.html To draw 12 points of clock on canvas, we need to add 12 positions that makes a perfect circle.</description>
     </item>
     
     <item>
       <title>Opdracht 03: Clean Code</title>
-      <link>/docs/opdrachten/_03/</link>
+      <link>04-ssg-nawatend/docs/opdrachten/_03/</link>
       <pubDate>Mon, 15 Apr 2019 12:16:47 +0200</pubDate>
       
-      <guid>/docs/opdrachten/_03/</guid>
+      <guid>04-ssg-nawatend/docs/opdrachten/_03/</guid>
       <description>Lets clean up our code for yourself and other developers CLEAN CODE Computer Science&amp;amp; Software Engineering 2
 Technische schuld (Eng.: technical debt)
  Ontstaat door voor minder goede oplossingen te kiezen die makkelijker en sneller te realiseren zijn.
