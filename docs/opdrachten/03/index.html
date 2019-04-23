@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+
+    <title></title>
+
+</head>
+<body class="d-flex justify-content-center flex-column align-items-center">
+    <div class="bg-dark w-100 d-flex justify-content-center flex-column align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-75">
+            <a class="navbar-brand" href="../../index.html">CSSE 2: Code Documentation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/opdrachten/_02/" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Opdrachten
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="/opdrachten/_01/">Opdracht 01: Class Matrix And Vectors
+                                Matrix And Vectors</a>
+                            <a class="dropdown-item" href="/opdrachten/_02/">Opdracht 02: Draw Clock</a>
+                            <a class="dropdown-item" href="/opdrachten/_03/">Opdracht 03: Clean Code</a>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main class="w-75" style="padding: .5rem 1rem;">
+<div class="w-100 d-flex justify-content-space-between">
+    
+    <a href=" /opdrachten/_02/" class="list-group-item list-group-item-action">
+        <span class="font-weight-bold">Previous: Opdracht 02: Real Time Clock</span>
+    </a>
+    
+
+    
+</div>
+<div class="w-100">
+    
+
+<h4 id="lets-clean-up-our-code-for-yourself-and-other-developers"><em>Lets clean up our code for yourself and other developers</em></h4>
+
+<h4 id="clean-code">CLEAN CODE</h4>
+
+<p>Computer Science&amp; Software Engineering 2</p>
+
+<p><strong>Technische schuld</strong> <em>(Eng.: technical debt)</em></p>
+
+<ul>
+<li><p>Ontstaat door voor <strong>minder goede oplossingen</strong>
+te kiezen die makkelijker en sneller te realiseren
+zijn.</p></li>
+
+<li><p>Uiteindelijk moet die schuld meestal toch
+afbetaald worden door <strong>kostelijke
+aanpassingen</strong>.</p></li>
+
+<li><p>Soms wordt die schuld zo groot dat men niet
+anders kan dan opnieuw beginnen.</p></li>
+</ul>
+
+<h2 id="technical-debt">Technical Debt</h2>
+
+<ul>
+<li>Code zal waarschijnlijk ook door anderen – of je
+toekomstige zelf – gelezen worden.</li>
+<li>Professionele code <strong>help de lezer</strong> om de code te
+begrijpen.
+Is <strong>niet</strong> geschreven om de intelligentie/kennis van de
+programmeur in de verf te zetten.</li>
+</ul>
+
+<h2 id="clarity-is-king-1">Clarity is King [1]</h2>
+
+<h6 id="professionals-use-their-powers-for-good-and">“Professionals use their powers for good and</h6>
+
+<h6 id="write-code-that-others-can-understand">write code that others can understand .”</h6>
+
+<ul>
+<li>Uncle Bob</li>
+</ul>
+
+<h2 id="clarity-is-king-2">Clarity is King [2]</h2>
+
+<ul>
+<li><p>Robert C. Martin</p></li>
+
+<li><p>‘Uncle Bob’</p></li>
+
+<li><p><a href="http://blog.cleancoder.com/">http://blog.cleancoder.com/</a></p></li>
+</ul>
+
+<h2 id="clean-code-1">Clean Code</h2>
+
+<h4 id="betekenisvolle-namen">BETEKENISVOLLE NAMEN</h4>
+
+<p>Computer Science &amp; Software Engineering 2</p>
+
+<p>We geven namen aan:
+* Variabelen
+* Functies
+* Parameters
+* Klassen
+* &hellip;
+De naamgeving moet de <strong>lezer helpen</strong>.</p>
+
+<h2 id="betekenisvolle-namen-1">Betekenisvolle Namen [1]</h2>
+
+<ul>
+<li>Internationale en/of <strong>meertalige context</strong>.
+Komt steeds vaker voor. Engels is de <em>lingua franca.</em></li>
+<li>Kies <strong>US English</strong>.
+De <em>de facto</em> standaard binnen de IT-wereld.</li>
+<li><strong>International English</strong> mag ook.
+Maar blijf <strong>consequent</strong> en gebruik ze niet door elkaar.</li>
+</ul>
+
+<h2 id="engels">Engels</h2>
+
+<ul>
+<li>Gebruik namen die <strong>uitspreekbaar</strong> zijn.
+Makkelijker om er met collega’s over te spreken.</li>
+</ul>
+
+<h2 id="uitspreekbaar">Uitspreekbaar</h2>
+
+<ul>
+<li>Namen moeten <strong>doorzoekbaar</strong> zijn.
+Snel terug te vinden zonder valse zoekresultaten.
+Zo kan je ook <strong>veilig</strong> <strong><em>zoeken &amp; vervangen</em></strong> toepassen.</li>
+</ul>
+
+<h2 id="doorzoekbaar">Doorzoekbaar</h2>
+
+<p>De <strong>bedoeling</strong> duidelijk zijn door de naam:
+* <strong>Waarom</strong> bestaat het.
+* <strong>Wat</strong> het is.
+* <strong>Hoe</strong> gebruik je het.</p>
+
+<h2 id="bedoeling-communiceren">Bedoeling communiceren</h2>
+
+<ul>
+<li>Vermijd woorden met een <strong>specifieke betekenis</strong>.
+Bijv. ‘list’ heeft een specifieke betekenis voor
+programmeurs en schept bepaalde verwachtingen.</li>
+</ul>
+
+<h2 id="vermijd-desinformatie">Vermijd desinformatie</h2>
+
+<ul>
+<li>Betekenisvol <strong>onderscheid</strong>.
+Wat is het verschil tussen bijvoorbeeld:</li>
+<li>ProductInfo en ProductData?</li>
+<li>Customeren CustomerObject?</li>
+<li>Gebruik <strong>geen ruiswoorden</strong> <em>(Eng.: noise words)</em>
+die nog eens het type weergeven.
+Table, Variable, Name &hellip;</li>
+</ul>
+
+<h2 id="onderscheidende-namen">Onderscheidende namen</h2>
+
+<ul>
+<li>Vermijd <strong>coderingen</strong>.
+Extra belasting om te ontcijferen. Bijvoorbeeld <em>Hongaarse
+Notatie</em> is niet meer nuttig met moderne IDE’s.</li>
+<li>Vermijd dat <strong><em>mental mapping</em></strong> nodig is.
+<em>Mapping:</em> verband leggen tussen een concept en de
+gebruikte variabele.</li>
+<li>Gebruik namen die de lezer al kent.</li>
+<li>Uitzondering voor lussen: i, j, k
+(geen lwant dat is verwarrend met 1 )</li>
+</ul>
+
+<h2 id="beperk-mentale-belasting">Beperk mentale belasting</h2>
+
+<ul>
+<li><strong>Zelfstandig naamwoord</strong>
+Account, Address, Book, Product, Customer &hellip;</li>
+<li><strong>Zelfstandignaamwoordgroep</strong>
+Woordgroep met een <strong>zelfstandig naamwoord</strong> als kern.
+AddressParser, DiscountedProduct,
+MostValuedCustomer&hellip;</li>
+<li>Geen werkwoord!</li>
+<li>Vermijd Data, Info, Manager of Processor in
+de naam.</li>
+</ul>
+
+<h2 id="klassenamen">Klassenamen</h2>
+
+<ul>
+<li><strong>Werkwoord</strong>
+activate, delete, disable, get, post, save, set
+&hellip;</li>
+<li><strong>Werkwoordgroep</strong>
+Woordgroep met een <strong>werkwoord</strong> als kern.
+removeOrder, updateProduct, suspendUser
+&hellip;</li>
+</ul>
+
+<h2 id="methodenamen">Methodenamen</h2>
+
+<ul>
+<li>Kies <strong>1 woord</strong> per concept.
+Gebruik bijvoorbeel deze woorden niet door elkaar:
+get, fetch, retrieve.
+Kies er een en blijf die <strong>consequent</strong> gebruiken
+doorheen de code, zo wordt de code <strong>voorspelbaar</strong>.</li>
+</ul>
+
+<h2 id="per-concept">Per concept</h2>
+
+<ul>
+<li>Kies woorden uit een <strong>domein</strong></li>
+<li>In <em>software engineering</em> is een domein een
+<strong>kennisgebied</strong>.</li>
+<li>Meestal bedoelt men hiermee het kennisgebied
+<strong>waarvoor de software</strong> geschreven moet worden.
+De business: verkoop, boekhouding, marketing, kleding &hellip;</li>
+</ul>
+
+<h2 id="domeinen">Domeinen</h2>
+
+<ul>
+<li>kortweg: <strong>het domein</strong></li>
+<li>Dit is het <strong>domein van de domeinexpert</strong>.
+Dit domein ligt voor de hand, maar de programmeurs
+moeten dit leren, zo ook de lezer van de code.</li>
+</ul>
+
+<h2 id="probleemdomein">Probleemdomein</h2>
+
+<ul>
+<li>Dit is het <strong>domein van de programmeur</strong>
+computer science, software engineering, IT &hellip;</li>
+<li>Geef <strong>voorrang</strong> aan dit domein als <strong>hetzelfde
+concept</strong> hier ook bestaat, want dat kent de
+lezer van de code al.</li>
+</ul>
+
+<h2 id="oplossingendomein">Oplossingendomein</h2>
+
+<ul>
+<li>Voeg <strong>context</strong> toe
+Weinig namen zijn betekenisvol zonder context.
+Bijvoorbeeld welk Address?</li>
+<li>BillingAddress</li>
+<li>DeliveryAddress</li>
+<li>IPAddress</li>
+<li>MemoryAddress</li>
+<li>PublicAddress</li>
+<li>&hellip;</li>
+<li>Eventueel kan een <strong>prefix</strong> toegevoegd worden als laatste
+redmiddel.</li>
+</ul>
+
+<h2 id="context">Context</h2>
+
+<ul>
+<li>Korte namen zijn <strong>beter</strong> dan lange namen
+Maar ze moeten wel <strong>duidelijk blijven</strong>.</li>
+</ul>
+
+<h2 id="korte-namen">Korte namen</h2>
+
+<h4 id="functies">FUNCTIES</h4>
+
+<p>Computer Science &amp; Software Engineering 2</p>
+
+<ul>
+<li>Moet <strong>één ding</strong> doen.</li>
+<li>Moet dat <strong>goed</strong> doen.</li>
+<li>Mag enkel dat doen, <strong>zonder neveneffecten</strong>.</li>
+</ul>
+
+<p>En moeten dus <strong>zo klein mogelijk</strong> zijn.</p>
+
+<h2 id="functie">Functie</h2>
+
+<ul>
+<li><strong>Codeblokken</strong> van een if, else, while &hellip;
+zouden <strong>niet meer dan 1 regel</strong> mogen bevatten,
+bijvoorbeeld een functieaanroep.</li>
+<li>Functies zouden <strong>geen geneste structuren</strong>
+mogen bevatten, dus nooit meer dan 1 à 2
+insprongen diep.</li>
+</ul>
+
+<h2 id="consequenties">Consequenties</h2>
+
+<ul>
+<li><strong>Parameter
+Variabele</strong> in de functiedefinitie.</li>
+<li><strong>Argument
+Waarde</strong> die meegegeven wordt voor de variabele in de
+functiedefinitie.</li>
+</ul>
+
+<h2 id="parameter-of-argument">Parameter of Argument?</h2>
+
+<p>Hoeveel <strong>argumenten</strong> willen we meegeven bij een
+functieaanroep?</p>
+
+<h2 id="parameters">Parameters</h2>
+
+<pre><code>Gebruiken? Naam Argumenten
+Bij voorkeur Niladischefunctie 0
+Is oké Monadische functie 1
+Is oké Dyadisch functie 2
+Te vermijden Triadischefunctie 3
+Absoluut te vermijden Polyadischefunctie &gt;3
+</code></pre>
+
+<pre><code>Monad (monadische functie)
+heeft 1 argument.
+</code></pre>
+
+<h2 id="monadische-functie-1">Monadische Functie [1]</h2>
+
+<p><strong>Goede toepassingen</strong></p>
+
+<ol>
+<li>Met <strong>return</strong> op basis van het argument.
+
+<ul>
+<li>Vraag stellen over het argument.
+fileExists(&lsquo;index.html&rsquo;)</li>
+<li>Argument bewerken/transformeren.
+fileOpen(&lsquo;index.html&rsquo;)</li>
+</ul></li>
+<li>Een <strong>gebeurtenis</strong> die de toestand van het
+systeem verandert.
+passwordAttemptFailedNTimes(3)</li>
+</ol>
+
+<h2 id="monadische-functie-2">Monadische Functie [2]</h2>
+
+<p><strong>Slechte toepassingen</strong>
+* <strong>vlag</strong> <em>(boolean)</em> als argument
+De functie doet <strong>twee dingen</strong> in plaats van een.</p>
+
+<h2 id="monadische-functie-3">Monadische Functie [3]</h2>
+
+<pre><code>Dyad (dyadische functie)
+heeft 2 argumenten.
+</code></pre>
+
+<h2 id="dyadische-functie-1">Dyadische Functie [1]</h2>
+
+<p><strong>Goede toepassing</strong>
+* Argumenten zijn <strong>geordende componenten</strong> van
+een enkele waarde.
+drawPoint(x, y)</p>
+
+<h2 id="dyadische-functie-2">Dyadische Functie [2]</h2>
+
+<p><strong>Minder goede toepassing</strong>
+* Argumenten <strong>zonder natuurlijke order</strong> van een
+enkele waarde
+assertEqual(expected, actual)
+of is het
+assertEqual(actual, expected)?</p>
+
+<h2 id="dyadische-functie-3">Dyadische Functie [3]</h2>
+
+<pre><code>Triad (triadische functie)
+heeft 3 argumenten.
+</code></pre>
+
+<h2 id="triadische-functie-1">Triadische Functie [1]</h2>
+
+<ul>
+<li>Denk goed na vooraleer je een triad maakt.
+De mogelijke problemen zijn dezelfde als met een
+dyad, maar nog veel erger.</li>
+<li>Kan soms nuttig zijn:
+assertEqual(expected, actual, precision)</li>
+</ul>
+
+<h2 id="triadische-functie-2">Triadische Functie [2]</h2>
+
+<p>Overweeg bij <strong>meer dan 2 of 3 argumenten</strong> :
+* <strong>Object</strong> als argument
+De argumenten zijn verschillend.
+drawCircle(x, y, radius)
+→ drawCircle(point, radius)
+* <strong>Lijst</strong> (array) als argument
+De argumenten worden gelijkaardig behandeld.
+sum (12, [5, -6, 55, 9])</p>
+
+<h2 id="alternatieve-argumenten">Alternatieve argumenten</h2>
+
+<p><strong>Vermijd output</strong> argumenten<strong>!</strong>
+appendString( <em>string</em> )</p>
+
+<ul>
+<li><p><strong>Input</strong> argument
+Het argument is input van de functie waarmee de beginsituatie
+veranderd moet worden.
+&ldquo;lorem&rdquo; → appendString(&ldquo;ipsum&rdquo;) → &ldquo;loremipsum&rdquo;</p></li>
+
+<li><p><strong>Output</strong> argument
+Het argument is de beginsituatie die veranderd moet worden.
+&ldquo;lorem&rdquo; → appendString(&ldquo;ipsum&rdquo;) → &ldquo;ipsumlorem&rdquo;</p></li>
+</ul>
+
+<h2 id="outputargumenten">Outputargumenten</h2>
+
+<h2 id="naamgeving">Naamgeving</h2>
+
+<ul>
+<li>Naamgeving met een <strong>werkwoord</strong>.
+assertEqual(expected, actual)</li>
+<li>Indien nodig ook de <strong>naam van de argumenten</strong>.
+assertExpectedEqualActual(expected, actual)</li>
+</ul>
+
+<h2 id="command-query-separation">Command Query Separation</h2>
+
+<ul>
+<li><strong>Command-functies</strong>
+De toestand van iets veranderen.</li>
+<li><strong>Query-functies</strong>
+Een vraag beantwoorden over iets.</li>
+</ul>
+
+<p>Ze mogen <strong>nooit beide tegelijk</strong> zijn!</p>
+
+<p><strong>Anticiperen op fouten</strong>
+* Gebruik <strong>exceptions</strong>.
+* Try/Catch-blokken extracten naar een functie.
+* Een <strong>Error Handler</strong> is ook een functie.</p>
+
+<h2 id="error-handling">Error Handling</h2>
+
+<p><strong><em>Don’t Repeat Yourself</em></strong>
+* Vermijd herhalingen
+Want die zijn de oorzaak van veel problemen.</p>
+
+<h2 id="dry">DRY</h2>
+
+<p><strong>Edsger Dijkstra</strong>
+Een functie en elk blok in een functie moet
+exact <strong>1 ingang</strong> en <strong>1 uitgang</strong> hebben:
+* 1 return per functie.
+* Geen continue of break in een lus.
+* Nooit een goto statement.</p>
+
+<p>Opmerking: dit is nuttig voor grote functies terwijl
+functies beter klein zijn.</p>
+
+<h2 id="structured-programming">Structured Programming</h2>
+
+<p><strong>Refactoren</strong>
+De code herschrijven zodat ze beter wordt:
+* Leesbaarder;
+* Makkelijker te onderhouden;
+* Performanter;
+* &hellip;</p>
+
+<h2 id="refactoring-1">Refactoring [1]</h2>
+
+<ul>
+<li>Schrijft functies niet onmiddellijk volgens de
+voorgaande regels, maar <strong>refactor</strong> ze tot ze aan
+de regels voldoen.
+<strong>Make it work first, then refactor, refactor, refactor.</strong></li>
+</ul>
+
+<h2 id="refactoring-2">Refactoring [2]</h2>
+
+<h4 id="commentaar">COMMENTAAR</h4>
+
+<p>Computer Science &amp; Software Engineering 2</p>
+
+<ul>
+<li>Compenseert slechte code niet</li>
+<li>Code zou zichzelf moeten uitleggen.
+Maar dit wil niet zeggen dat er geen commentaar
+nodig is!</li>
+</ul>
+
+<h2 id="commentaar-1">Commentaar [1]</h2>
+
+<ul>
+<li>Copyright</li>
+<li>Auteur</li>
+<li>Licentie waaronder de software valt.</li>
+<li>&hellip;</li>
+</ul>
+
+<p>Verwijst bij voorkeur naar een extern document.</p>
+
+<h2 id="juridische-commentaar">Juridische Commentaar</h2>
+
+<ul>
+<li>Legt uit <strong>wat</strong> het is of wat er gebeurt.</li>
+</ul>
+
+<h2 id="informatieve-commentaar">Informatieve Commentaar</h2>
+
+<ul>
+<li>Legt uit <strong>waarom</strong> de programmeur een
+bepaalde keuze gemaakt heeft.</li>
+</ul>
+
+<h2 id="verklarende-commentaar">Verklarende Commentaar</h2>
+
+<ul>
+<li>Voor code statements die veel inspanning
+vergen om te begrijpen en niet eenvoudiger in
+code geschreven kunnen worden.
+Bijv. vergelijkingen</li>
+</ul>
+
+<h2 id="verduidelijkende-commentaar">Verduidelijkende Commentaar</h2>
+
+<ul>
+<li>Waarschuwt voor gevolgen die door de code
+veroorzaakt kunnen worden.</li>
+</ul>
+
+<h2 id="waarschuwende-commentaar">Waarschuwende Commentaar</h2>
+
+<ul>
+<li>Om te wijzen op belangrijke dingen die mogelijk
+over het hoofd gezien worden.</li>
+</ul>
+
+<h2 id="versterkende-commentaar">Versterkende Commentaar</h2>
+
+<ul>
+<li>Dingen die <strong>nog moeten gebeuren</strong> volgens de
+programmeur.</li>
+<li>Veel IDE’s kunnen die oplijsten.
+Bijv. PhpStorm.</li>
+<li>Hoort eigenlijk niet thuis in de code, maar in
+een <strong>ticketing of planning systeem</strong>.</li>
+</ul>
+
+<h2 id="todo-commentaar">ToDo Commentaar</h2>
+
+<ul>
+<li><strong>Overbodige commentaar</strong>
+Commentaar die langer duurt om te lezen dan om de
+code te begrijpen.</li>
+<li><strong>Nietszeggende commentaar</strong>
+/** constructor */</li>
+<li><strong>Misleidende commentaar</strong></li>
+<li><strong>Verplichte commentaar</strong></li>
+</ul>
+
+<h2 id="slechte-commentaar-1">Slechte Commentaar [1]</h2>
+
+<ul>
+<li>Commentaar bij een <strong>afsluitende accolade</strong>.</li>
+<li><strong>Code</strong> in commentaar.</li>
+<li><strong>Jounaal commentaar</strong> (log)
+Dit hoort in een <em>Version Control System.</em></li>
+<li><strong>Toeschrijvingen</strong> <em>(Eng.: Attribution)</em>
+aan een bepaalde persoon.
+Dit hoort in een <em>Version Control System.</em></li>
+</ul>
+
+<h2 id="slechte-commentaar-2">Slechte Commentaar [2]</h2>
+
+</div>
+
+<div class="w-100 d-flex justify-content-space-between">
+    
+    <a href=" /opdrachten/_02/" class="list-group-item list-group-item-action">
+        <span class="font-weight-bold">Previous: Opdracht 02: Real Time Clock</span>
+    </a>
+    
+
+    
+</div>
+</main>
+<footer></footer>
+</body>
+
+</html>
