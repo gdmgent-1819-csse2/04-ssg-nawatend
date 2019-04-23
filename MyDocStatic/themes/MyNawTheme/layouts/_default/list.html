@@ -6,15 +6,19 @@
     {{partial "head.html"}}
     <title>Document</title>
 </head>
+{{partial "header.html"}}
+<div class="">
+    <h2>Content List of WebGL Demo</h2>
+    <div class="">
+        {{range .Site.RegularPages}}
+        <a href="{{.Permalink}}" class="list-group-item list-group-item-action">
+            <span class="font-weight-bold">{{.Title}}</span>
 
-<body>
-    <div class="list-group">
-        {{ range .Pages}}
-        <a href="{{.URL}}" class="list-group-item list-group-item-action">
-            {{.Title}}
+            <p> {{.Description}}</p>
         </a>
+
+        <br>
         {{end}}
     </div>
-</body>
-
-</html>
+</div>
+{{ partial "footer.html" . }}
